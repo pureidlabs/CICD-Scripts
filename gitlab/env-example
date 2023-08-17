@@ -1,0 +1,12 @@
+export ORG_ID="example.com"
+export ACCESS_TOKEN="YYYYYYYYYYYYYYYYYY"
+export SERVER_API_URL="https://live.pureauth.io/api/v1/organizations/employees/get-signing-key"
+export MAX_FAIL_COUNT=0
+export IGNORE_COMMITS_START="798b7aac9a424af5fedbadc9231cb7c4b0eebce4"
+export COMMIT_EXCEPTIONS_HASHES="798b7aac9a424af5fedbadc9231cb7c4b0eebce4, 4b67491f8ba8adcbbe9aa062bc1ac09741e5d93a"
+export GOOGLE_CHAT_WEBHOOK_URL="https://chat.googleapis.com/v1/spaces/AAAA.."
+export COMMITS_CHECK_COUNT=5
+
+#export ACCESS_TOKEN="LA0AT0WWx6pZ6dgWfqTr9BjvTUZYPMOmWcW34pnRNjw"
+#export CI_COMMIT_SHA="391904c4881441178940966e47eb51bc0d6ce94f"
+#export SERVER_API_URL="http://localhost:5000/api/v1/organizations/employees/get-signing-key"
