@@ -239,6 +239,12 @@ process.stdin.on('data', data => {
                 }
                 notificationMessage += `Commit Verified: ${commit.verified}\n`
             });
+
+            // Add the branch and repo name (GITLAB ONLY)
+            if (process.argv.length == 4){
+                notificationMessage = `Branch: ${process.argv[2]} \nProject: ${process.argv[3]}\n` + notificationMessage;
+            }
+
             sendNotification(notificationMessage).then(_ => {
                 throw new Error("Too many commits failed verification.")
             }).catch(err=>{
